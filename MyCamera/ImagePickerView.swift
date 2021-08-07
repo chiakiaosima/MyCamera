@@ -12,7 +12,7 @@ struct ImagePickerView: UIViewControllerRepresentable {
     // UIImagePickerController（写真撮影）が表示されているか
     @Binding var isShowSheet: Bool
     // 撮影した写真
-    @Binding var captuerImage: UIImage?
+    @Binding var captureImage: UIImage?
     
     //coordinatorでコントローラのdelegateを管理
     class Coordinator: NSObject,
@@ -34,7 +34,7 @@ struct ImagePickerView: UIViewControllerRepresentable {
             if let originalImage =
                 info[UIImagePickerController.InfoKey.originalImage]
                 as? UIImage {
-                parent.captuerImage = originalImage
+                parent.captureImage = originalImage
             }
             // sheetを閉じる
             parent.isShowSheet = false
