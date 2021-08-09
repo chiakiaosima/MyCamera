@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01511D8326C16FF7006280FC /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01511D8226C16FF7006280FC /* PHPickerView.swift */; };
 		01F6FBC626BD417A0086B504 /* MyCameraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6FBC526BD417A0086B504 /* MyCameraApp.swift */; };
 		01F6FBC826BD417A0086B504 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F6FBC726BD417A0086B504 /* ContentView.swift */; };
 		01F6FBCA26BD417D0086B504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F6FBC926BD417D0086B504 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01511D8226C16FF7006280FC /* PHPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerView.swift; sourceTree = "<group>"; };
 		01F6FBC226BD417A0086B504 /* MyCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F6FBC526BD417A0086B504 /* MyCameraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCameraApp.swift; sourceTree = "<group>"; };
 		01F6FBC726BD417A0086B504 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				01F6FBC526BD417A0086B504 /* MyCameraApp.swift */,
 				01F6FBC726BD417A0086B504 /* ContentView.swift */,
+				01511D8226C16FF7006280FC /* PHPickerView.swift */,
 				01F6FBD626BE24840086B504 /* ActivityView.swift */,
 				01F6FBD426BD42150086B504 /* ImagePickerView.swift */,
 				01F6FBC926BD417D0086B504 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01511D8326C16FF7006280FC /* PHPickerView.swift in Sources */,
 				01F6FBC826BD417A0086B504 /* ContentView.swift in Sources */,
 				01F6FBD726BE24840086B504 /* ActivityView.swift in Sources */,
 				01F6FBD526BD42150086B504 /* ImagePickerView.swift in Sources */,
