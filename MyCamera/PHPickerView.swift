@@ -50,5 +50,37 @@ struct PHPickerView: UIViewControllerRepresentable {
             parent.isShowSheet = false
         } // pickerここまで
     } //Coordinatorここまで
+    
+    // Coordinatorを生成、SwiftUIによって自動的に呼び出し
+    func makeCoordinator() -> Coordinator {
+        // Coordinatorクラスのインスタンスを生成
+        Coordinator(parent: self)
+    }
+    
+    // Viewを生成する時に実行
+    func makeUIViewController(
+        context: UIViewControllerRepresentableContext<PHPickerView>)
+    -> PHPickerViewController {
+        // PHPickerViewControllerのカスタマイズ
+        var configuration = PHPickerConfiguration()
+        // 静止画を選択
+        configuration.filter = .images
+        // フォトライブラリーで選択できる枚数を1枚にする
+        configuration.selectionLimit = 1
+        // PHPickeyViewControllerのインスタンスを生成
+        let picker = PHPickerViewController(configuration: configuration)
+        // delegate設定
+        picker.delegate = context.coordinator
+        // PHPickeyViewControllerを返す
+        return picker
+    }
+    
+    // Viewが更新された時に実行
+    func updateUIViewController(
+        _ uiViewController: PHPickerViewController,
+        context: UIViewControllerRepresentableContext<PHPickerView>)
+    {
+        // 処理なし
+    }
 } // PHPickerViewここまで
 
